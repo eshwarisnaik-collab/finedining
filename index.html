@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ember & Oak — Wood-Fired Fine Dining</title>
+<meta name="description" content="Ember & Oak is a wood-fired fine dining restaurant. Explore our menu, reserve a table, and discover a kitchen built around fire and patience.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+<link rel="icon" href="data:,">
+</head>
+<body>
+ 
+<!-- ===== Navigation ===== -->
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="brand">Ember <span>&amp; Oak</span></a>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#reserve">Reserve</a>
+      <a href="#contact">Contact</a>
+      <a href="about-project.html" class="doc-link">About Project</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav-overlay"></div>
+ 
+<!-- ===== Hero ===== -->
+<header class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <div class="hero-kicker"><span class="dot"></span> Wood-Fired · Seasonal · Bengaluru</div>
+      <h1>Fire is patient.<br><em>So are we.</em></h1>
+      <p class="hero-sub">Ember &amp; Oak is a live-fire kitchen where every plate is built around smoke, char, and the slow discipline of cooking over wood. No shortcuts — just heat, technique, and honest ingredients.</p>
+      <div class="hero-cta">
+        <a href="#reserve" class="btn btn-solid">Reserve a table</a>
+        <a href="#menu" class="btn btn-ghost">View the menu</a>
+      </div>
+      <div class="hero-meta">
+        <div><span class="num">08</span><span class="lab">Years open flame</span></div>
+        <div><span class="num">32</span><span class="lab">Seasonal dishes</span></div>
+        <div><span class="num">4.8</span><span class="lab">Guest rating</span></div>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="plate"><div class="plate-core"></div></div>
+      <span class="tag">— tonight's hearth —</span>
+    </div>
+  </div>
+</header>
+ 
+<div class="strip" aria-hidden="true">
+  <div class="strip-track">
+    <span>Wood-fired</span><span>Seasonal menu</span><span>Chef's table</span><span>Natural wine</span><span>Live hearth</span><span>Reservations open</span>
+    <span>Wood-fired</span><span>Seasonal menu</span><span>Chef's table</span><span>Natural wine</span><span>Live hearth</span><span>Reservations open</span>
+  </div>
+</div>
+ 
+<!-- ===== About / Story ===== -->
+<section class="section about" id="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">Our story</div>
+        <h2 class="section-title">Built around <em>one hearth</em>,<br>not a hundred burners.</h2>
+      </div>
+    </div>
+    <div class="about-grid">
+      <div class="about-figure reveal">
+        <span class="big-num">01</span>
+        <p>The Hearth — est. 2018</p>
+        <ul class="value-list">
+          <li><strong>Oak &amp; fruitwood</strong><span>Fuel</span></li>
+          <li><strong>Open kitchen</strong><span>Format</span></li>
+          <li><strong>Farm-direct</strong><span>Sourcing</span></li>
+        </ul>
+      </div>
+      <div class="about-copy reveal">
+        <p>Ember &amp; Oak started as a single wood-fired grill and a short, stubborn menu. We believed a kitchen didn't need a wall of gas burners to be serious — it needed patience, good wood, and produce worth cooking simply.</p>
+        <p>Today the hearth still sits at the centre of the room. Every course, from the first snack to the last dessert, passes near the fire in some form — smoked, charred, roasted, or finished over embers. Our team works in close rotation between the pass and the dining room, so the people plating your food are often the ones bringing it to your table.</p>
+        <p>We keep the menu short and seasonal on purpose. Shorter menus mean better ingredients, tighter technique, and a kitchen that can actually taste everything it sends out.</p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ===== Menu ===== -->
+<section class="section" id="menu">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">The menu</div>
+        <h2 class="section-title">Everything touches <em>the fire</em> once.</h2>
+        <p class="section-lede">A rotating, seasonal selection. Filter by course or search for a dish.</p>
+      </div>
+    </div>
+ 
+    <div class="menu-controls reveal">
+      <div class="menu-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="starters">Starters</button>
+        <button class="filter-btn" data-filter="mains">Mains</button>
+        <button class="filter-btn" data-filter="desserts">Desserts</button>
+        <button class="filter-btn" data-filter="drinks">Drinks</button>
+      </div>
+      <div class="menu-search">
+        <input type="text" id="menuSearch" placeholder="Search the menu…" aria-label="Search the menu">
+      </div>
+    </div>
+ 
+    <div class="menu-grid reveal">
+ 
+      <article class="menu-item" data-category="starters" data-name="Charred octopus, smoked chilli">
+        <div class="menu-item-top">
+          <h3>Charred octopus</h3>
+          <span class="menu-price">₹ 620</span>
+        </div>
+        <p>Slow-braised then finished over embers, smoked chilli oil, charred lime.</p>
+        <span class="menu-tag">Signature</span>
+      </article>
+ 
+      <article class="menu-item" data-category="starters" data-name="Burnt onion soup, oak smoke">
+        <div class="menu-item-top">
+          <h3>Burnt onion soup</h3>
+          <span class="menu-price">₹ 380</span>
+        </div>
+        <p>Caramelised onions, oak-smoked broth, aged cheese crisp.</p>
+        <span class="menu-tag">Vegetarian</span>
+      </article>
+ 
+      <article class="menu-item" data-category="starters" data-name="Hearth flatbread, whipped ash butter">
+        <div class="menu-item-top">
+          <h3>Hearth flatbread</h3>
+          <span class="menu-price">₹ 340</span>
+        </div>
+        <p>Baked at the mouth of the fire, whipped ash butter, sea salt.</p>
+        <span class="menu-tag">Vegetarian</span>
+      </article>
+ 
+      <article class="menu-item" data-category="mains" data-name="Dry-aged ribeye, embered potatoes">
+        <div class="menu-item-top">
+          <h3>Dry-aged ribeye</h3>
+          <span class="menu-price">₹ 1,850</span>
+        </div>
+        <p>28-day dry-aged, cooked directly on embers, roasted bone marrow jus.</p>
+        <span class="menu-tag">Signature</span>
+      </article>
+ 
+      <article class="menu-item" data-category="mains" data-name="Whole roasted cauliflower, smoked tahini">
+        <div class="menu-item-top">
+          <h3>Whole roasted cauliflower</h3>
+          <span class="menu-price">₹ 720</span>
+        </div>
+        <p>Slow roasted whole over wood, smoked tahini, toasted seeds.</p>
+        <span class="menu-tag">Vegan</span>
+      </article>
+ 
+      <article class="menu-item" data-category="mains" data-name="Fire-grilled king fish, char lemon">
+        <div class="menu-item-top">
+          <h3>Fire-grilled king fish</h3>
+          <span class="menu-price">₹ 980</span>
+        </div>
+        <p>Marinated overnight, grilled over fruitwood, charred lemon.</p>
+        <span class="menu-tag">Chef's pick</span>
+      </article>
+ 
+      <article class="menu-item" data-category="desserts" data-name="Smoked chocolate tart">
+        <div class="menu-item-top">
+          <h3>Smoked chocolate tart</h3>
+          <span class="menu-price">₹ 420</span>
+        </div>
+        <p>Dark chocolate ganache, hearth-smoked cream, sea salt shard.</p>
+        <span class="menu-tag">Signature</span>
+      </article>
+ 
+      <article class="menu-item" data-category="desserts" data-name="Charred pineapple, brown butter">
+        <div class="menu-item-top">
+          <h3>Charred pineapple</h3>
+          <span class="menu-price">₹ 380</span>
+        </div>
+        <p>Fire-caramelised pineapple, brown butter crumble, vanilla.</p>
+        <span class="menu-tag">Vegetarian</span>
+      </article>
+ 
+      <article class="menu-item" data-category="drinks" data-name="Smoked old fashioned cocktail">
+        <div class="menu-item-top">
+          <h3>Smoked old fashioned</h3>
+          <span class="menu-price">₹ 650</span>
+        </div>
+        <p>Oak-smoked whisky, bitters, charred orange peel.</p>
+        <span class="menu-tag">Bar</span>
+      </article>
+ 
+      <article class="menu-item" data-category="drinks" data-name="House natural wine, red">
+        <div class="menu-item-top">
+          <h3>House natural red</h3>
+          <span class="menu-price">₹ 520</span>
+        </div>
+        <p>Low-intervention red, rotating selection by the glass.</p>
+        <span class="menu-tag">Bar</span>
+      </article>
+ 
+      <article class="menu-item" data-category="drinks" data-name="Charcoal lemonade, mint">
+        <div class="menu-item-top">
+          <h3>Charcoal lemonade</h3>
+          <span class="menu-price">₹ 280</span>
+        </div>
+        <p>Activated charcoal, fresh lemon, mint, soda.</p>
+        <span class="menu-tag">Non-alcoholic</span>
+      </article>
+ 
+      <div class="menu-empty">No dishes match your search — try another term.</div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ===== Reservation ===== -->
+<section class="section reserve" id="reserve">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">Reserve</div>
+        <h2 class="section-title">Save a seat by <em>the fire.</em></h2>
+      </div>
+    </div>
+    <div class="reserve-wrap">
+      <div class="reserve-info reveal">
+        <div class="info-row"><span>Lunch</span><span>12:00 – 15:00</span></div>
+        <div class="info-row"><span>Dinner</span><span>19:00 – 23:30</span></div>
+        <div class="info-row"><span>Closed</span><span>Mondays</span></div>
+        <div class="info-row"><span>Group size</span><span>Up to 20 guests</span></div>
+        <div class="info-row"><span>Dress code</span><span>Smart casual</span></div>
+      </div>
+      <form class="form-card reveal" id="reserveForm" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="r-name">Full name</label>
+            <input type="text" id="r-name" name="name" placeholder="Your name" required>
+            <span class="field-msg"></span>
+          </div>
+          <div class="field">
+            <label for="r-email">Email</label>
+            <input type="email" id="r-email" name="email" placeholder="you@example.com" required>
+            <span class="field-msg"></span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="r-phone">Phone</label>
+            <input type="tel" id="r-phone" name="phone" placeholder="+91 98xxxxxxxx" required>
+            <span class="field-msg"></span>
+          </div>
+          <div class="field">
+            <label for="r-guests">Guests</label>
+            <input type="number" id="r-guests" name="guests" min="1" max="20" placeholder="2" required>
+            <span class="field-msg"></span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="r-date">Date</label>
+            <input type="date" id="r-date" name="date" required>
+            <span class="field-msg"></span>
+          </div>
+          <div class="field">
+            <label for="r-time">Time</label>
+            <input type="time" id="r-time" name="time" required>
+            <span class="field-msg"></span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field full">
+            <label for="r-notes">Notes (optional)</label>
+            <textarea id="r-notes" name="notes" placeholder="Allergies, occasion, seating preference…"></textarea>
+          </div>
+        </div>
+        <div class="form-foot">
+          <button type="submit" class="btn btn-solid">Confirm reservation</button>
+          <span class="form-status"></span>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+ 
+<!-- ===== Contact ===== -->
+<section class="section contact" id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">Contact</div>
+        <h2 class="section-title">Questions before<br><em>you visit?</em></h2>
+      </div>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <ul class="contact-list">
+          <li><span class="ic">◆</span><div><strong>Address</strong><span>14 Hearth Lane, Indiranagar, Bengaluru</span></div></li>
+          <li><span class="ic">◆</span><div><strong>Phone</strong><span>+91 80 4567 8901</span></div></li>
+          <li><span class="ic">◆</span><div><strong>Email</strong><span>hello@emberandoak.example</span></div></li>
+          <li><span class="ic">◆</span><div><strong>Hours</strong><span>Tue – Sun, 12:00 – 23:30</span></div></li>
+        </ul>
+        <form id="contactForm" novalidate style="margin-top:36px; display:grid; gap:18px;">
+          <div class="field">
+            <label for="c-name">Name</label>
+            <input type="text" id="c-name" name="name" placeholder="Your name" required>
+            <span class="field-msg"></span>
+          </div>
+          <div class="field">
+            <label for="c-email">Email</label>
+            <input type="email" id="c-email" name="email" placeholder="you@example.com" required>
+            <span class="field-msg"></span>
+          </div>
+          <div class="field">
+            <label for="c-message">Message</label>
+            <textarea id="c-message" name="message" placeholder="How can we help?" required></textarea>
+            <span class="field-msg"></span>
+          </div>
+          <button type="submit" class="btn btn-solid" style="justify-self:flex-start;">Send message</button>
+        </form>
+      </div>
+      <div class="map-box reveal">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15551.923150857225!2d77.62791184056117!3d12.973080557611423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16a418770391%3A0xb50f46b826501036!2sIndiranagar%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1784265060179!5m2!1sen!2sin" width="800" height="1000" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ===== Footer ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">Ember <span>&amp; Oak</span></a>
+        <p>A wood-fired fine dining kitchen built around fire, patience, and seasonal produce.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#about">Story</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#reserve">Reserve</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Project</h4>
+          <ul>
+            <li><a href="about-project.html">About Project / Documentation</a></li>
+            <li><a href="https://github.com/username/project-name" target="_blank" rel="noopener">GitHub Repository</a></li>
+            <li><a href="https://project-name.vercel.app" target="_blank" rel="noopener">Live Deployment</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Ember &amp; Oak. Built for the Frontend Web Development Competition 2026.</span>
+      <span>Team <a href="about-project.html">Code Masters</a></span>
+    </div>
+  </div>
+</footer>
+ 
+<button class="to-top" aria-label="Back to top">↑</button>
+<div class="toast" id="toast"></div>
+ 
+<script src="script.js"></script>
+</body>
+</html>

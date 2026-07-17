@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Project — Ember & Oak Documentation</title>
+<meta name="description" content="Project documentation for Ember & Oak, submitted for the Frontend Web Development Competition 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+<link rel="stylesheet" href="docs.css">
+<link rel="icon" href="data:,">
+</head>
+<body>
+ 
+<!-- ===== Navigation ===== -->
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="brand">Ember <span>&amp; Oak</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#menu">Menu</a>
+      <a href="index.html#reserve">Reserve</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="about-project.html" class="doc-link">About Project</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav-overlay"></div>
+ 
+<!-- ===== Doc Hero ===== -->
+<header class="doc-hero">
+  <div class="container">
+    <div class="eyebrow reveal">Frontend Web Development Competition 2026</div>
+    <h1 class="doc-title reveal">Project <em>Documentation</em></h1>
+    <p class="doc-sub reveal">Everything about how Ember &amp; Oak was designed, built, and deployed — kept on the record for evaluation.</p>
+    <div class="doc-meta reveal">
+      <div><span class="lab">Project</span><span class="val">Ember &amp; Oak</span></div>
+      <div><span class="lab">Category</span><span class="val">Restaurant / Fine Dining Website</span></div>
+      <div><span class="lab">Team</span><span class="val">Code Masters</span></div>
+    </div>
+  </div>
+</header>
+ 
+<main>
+ 
+<!-- 1. Project Overview -->
+<section class="section doc-section" id="overview">
+  <div class="container">
+    <div class="doc-num reveal">01</div>
+    <h2 class="section-title reveal">Project Overview</h2>
+    <div class="doc-grid reveal">
+      <div class="doc-card">
+        <h4>Project Title</h4>
+        <p>Ember &amp; Oak — Wood-Fired Fine Dining Website</p>
+      </div>
+      <div class="doc-card">
+        <h4>Website Category</h4>
+        <p>Restaurant / Fine Dining Website</p>
+      </div>
+      <div class="doc-card">
+        <h4>Problem Statement</h4>
+        <p>Independent fine dining restaurants often lack a digital presence that reflects the quality of their food and service. Guests need a fast, mobile-friendly way to browse the menu, understand the restaurant's identity, and reserve a table without phone calls or third-party apps.</p>
+      </div>
+      <div class="doc-card">
+        <h4>Why We Chose This Project</h4>
+        <p>Restaurants are a rich, real-world subject for frontend practice: they combine visual storytelling, structured data (menus, prices, hours), interactive filtering, and form-driven workflows like reservations. Fine dining specifically pushed us to design a distinctive visual identity rather than a generic template, which matched the competition's emphasis on creativity.</p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<div class="container"><div class="ember-rule"></div></div>
+ 
+<!-- 2. Project Description -->
+<section class="section doc-section" id="description">
+  <div class="container">
+    <div class="doc-num reveal">02</div>
+    <h2 class="section-title reveal">Project Description</h2>
+    <div class="doc-prose reveal">
+      <p>Ember &amp; Oak is a fully responsive fine dining restaurant website built with HTML5, CSS3, and vanilla JavaScript. The purpose of the site is to give a wood-fired restaurant a digital home that matches its brand: warm, confident, and built around fire and seasonal cooking, while giving guests a clear path to browse the menu and book a table.</p>
+      <p>The target users are two groups: prospective diners researching the restaurant on mobile or desktop before visiting, and returning guests who want a fast way to check the menu, hours, or make a reservation. The site is designed mobile-first in spirit, with layouts that adapt from a single-column phone view up to a wide desktop grid.</p>
+      <p>Key features include a searchable and filterable menu (by course: starters, mains, desserts, drinks), a validated reservation form with real-time field feedback and local storage persistence, a validated contact form, scroll-triggered reveal animations, a responsive slide-in mobile navigation, and a dedicated, competition-required documentation page describing the project in full.</p>
+      <p>If given more development time, planned improvements include backend integration for real reservation management and email confirmations, an admin dashboard for the restaurant to update the menu without editing code, user accounts with saved preferences, online payments for private events, and a live table-availability calendar tied to real booking data.</p>
+    </div>
+  </div>
+</section>
+ 
+<div class="container"><div class="ember-rule"></div></div>
+ 
+<!-- 3. Technology Stack -->
+<section class="section doc-section" id="stack">
+  <div class="container">
+    <div class="doc-num reveal">03</div>
+    <h2 class="section-title reveal">Technology Stack</h2>
+    <div class="stack-grid reveal">
+      <div class="stack-card">
+        <h4>Frontend</h4>
+        <ul>
+          <li>HTML5 — semantic structure</li>
+          <li>CSS3 — custom properties, Grid &amp; Flexbox</li>
+          <li>Vanilla JavaScript (ES6+) — no frameworks</li>
+        </ul>
+      </div>
+      <div class="stack-card">
+        <h4>Deployment</h4>
+        <ul>
+          <li>GitHub — version control &amp; repository hosting</li>
+          <li>Vercel — static site deployment</li>
+        </ul>
+      </div>
+      <div class="stack-card">
+        <h4>External Resources</h4>
+        <ul>
+          <li>Google Fonts — Fraunces, Work Sans, Space Mono</li>
+          <li>No external icon library — icons built as inline SVG / typographic marks</li>
+          <li>No stock photography used — visuals built with CSS/SVG only</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<div class="container"><div class="ember-rule"></div></div>
+ 
+<!-- 4. Team Information -->
+<section class="section doc-section" id="team">
+  <div class="container">
+    <div class="doc-num reveal">04</div>
+    <h2 class="section-title reveal">Team Information</h2>
+    <div class="table-wrap reveal">
+      <table class="doc-table">
+        <thead>
+          <tr><th>Full Name</th><th>Roll Number</th><th>Department</th><th>Year</th><th>Email </th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Ankitha N</td><td>1SP23EC005</td><td>ECE</td><td>4th</td><td>ankithanachar2020@gmail.com</td></tr>
+          <tr><td>Eshwari Naik</td><td>1SP23EC013</td><td>ECE</td><td>4th</td><td>eshwarisnaik@gmail.com</td></tr>
+        </tbody>
+      </table>
+   
+</section>
+ 
+<div class="container"><div class="ember-rule"></div></div>
+ 
+<!-- 5. Team Contribution -->
+<section class="section doc-section" id="contribution">
+  <div class="container">
+    <div class="doc-num reveal">05</div>
+    <h2 class="section-title reveal">Team Contribution</h2>
+    <div class="table-wrap reveal">
+      <table class="doc-table">
+        <thead>
+          <tr><th>Team Member</th><th>Contribution</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Ankitha N</td><td>Homepage design, hero &amp; about section, CSS design system (colors, type scale)</td></tr>
+          <tr><td>Eshwari Naik</td><td>JavaScript functionality — menu filter/search, form validation, scroll reveals , Responsive design across breakpoints, cross-browser testing, GitHub &amp; Vercel deployment</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+ 
+<div class="container"><div class="ember-rule"></div></div>
+ 
+<!-- 6. Challenges Faced -->
+<section class="section doc-section" id="challenges">
+  <div class="container">
+    <div class="doc-num reveal">06</div>
+    <h2 class="section-title reveal">Challenges Faced</h2>
+    <div class="doc-prose reveal">
+      <p><strong>Problem:</strong> Building a distinctive visual identity instead of a generic restaurant template was harder than expected — early drafts defaulted to layouts we'd seen on many other sites.</p>
+      <p><strong>Solution:</strong> We grounded every design decision in the restaurant's specific concept (wood-fire cooking) — from the color palette to the animated "ember" motion — instead of using generic stock styling.</p>
+      <p><strong>Problem:</strong> Keeping the menu filter, search, and empty-state working together correctly across categories caused bugs where results would conflict.</p>
+      <p><strong>Solution:</strong> We refactored the logic into a single <code>applyMenuFilter()</code> function that always re-evaluates both the active category and the search query together, avoiding conflicting states.</p>
+      <p><strong>Problem:</strong> Achieving consistent spacing and layout across mobile, tablet, and desktop, especially for the reservation form and menu grid.</p>
+      <p><strong>Lesson learned:</strong> Testing early and often at multiple breakpoints — rather than designing desktop-first and retrofitting mobile styles — saved significant rework later in the project.</p>
+    </div>
+  </div>
+</section>
+ 
+<div class="container"><div class="ember-rule"></div></div>
+ 
+<!-- 7. Learning Outcomes -->
+<section class="section doc-section" id="outcomes">
+  <div class="container">
+    <div class="doc-num reveal">07</div>
+    <h2 class="section-title reveal">Learning Outcomes</h2>
+    <ul class="chip-list reveal">
+      <li>Responsive design &amp; media queries</li>
+      <li>CSS Grid &amp; Flexbox layout systems</li>
+      <li>CSS custom properties / design tokens</li>
+      <li>JavaScript DOM manipulation</li>
+      <li>Event handling</li>
+      <li>Form validation (client-side)</li>
+      <li>Local Storage for persisting data</li>
+      <li>IntersectionObserver for scroll animations</li>
+      <li>Git &amp; GitHub repository management</li>
+      <li>Deployment using Vercel</li>
+      <li>Team collaboration &amp; task division</li>
+    </ul>
+  </div>
+</section>
+ 
+<div class="container"><div class="ember-rule"></div></div>
+ 
+<!-- 8. Feedback -->
+<section class="section doc-section" id="feedback">
+  <div class="container">
+    <div class="doc-num reveal">08</div>
+    <h2 class="section-title reveal">Feedback on the Frontend Web Development Training</h2>
+    <div class="doc-prose reveal">
+      <p>The training gave us a solid, practical foundation in HTML, CSS, and JavaScript, and the hands-on structure made it easy to apply new concepts immediately to our own project rather than just following along passively. We particularly liked the emphasis on building something real end-to-end — from layout to interactivity to deployment — instead of isolated exercises.</p>
+      <p>What helped most was seeing real examples of responsive layouts and JavaScript patterns we could adapt rather than copy. One suggestion for improvement would be more guidance on design fundamentals (color, type, layout composition) early on, since visual design decisions turned out to be just as time-consuming as the code itself. Overall, the training left us confident enough to plan, build, and ship a complete project on our own.</p>
+    </div>
+  </div>
+</section>
+ 
+<div class="container"><div class="ember-rule"></div></div>
+ 
+<!-- 9. Screenshots -->
+<section class="section doc-section" id="screenshots">
+  <div class="container">
+    <div class="doc-num reveal">09</div>
+    <h2 class="section-title reveal">Project Screenshots</h2>
+    <div class="shot-grid reveal">
+      <div><span>Home </span><img src="images\home.png" alt="profile Image"></div>
+      <div><span>Menu </span><img src="images\menu.png" alt="profile Image"></div>
+      <div><span>Reserve </span><img src="images\reservation.png" alt="profile Image"></div>
+    <div><span>Mobile View </span><img src="images\mobile.png" alt="profile Image"></div>
+</div>
+</section>
+ 
+<div class="container"><div class="ember-rule"></div></div>
+ 
+<!-- 10. Links -->
+<section class="section doc-section" id="links">
+  <div class="container">
+    <div class="doc-num reveal">10</div>
+    <h2 class="section-title reveal">GitHub &amp; Deployment Links</h2>
+    <div class="link-grid reveal">
+      <a href="https://github.com/username/project-name" target="_blank" rel="noopener" class="link-card">
+        <h4>GitHub Repository</h4>
+        <p>github.com/username/project-name</p>
+      </a>
+      <a href="https://project-name.vercel.app" target="_blank" rel="noopener" class="link-card">
+        <h4>Live Deployment</h4>
+        <p>project-name.vercel.app</p>
+      </a>
+    </div>
+    <p class="doc-note reveal">Replace both links above with your team's actual GitHub repository and Vercel deployment URLs before submission.</p>
+  </div>
+</section>
+ 
+<div class="container"><div class="ember-rule"></div></div>
+ 
+<!-- Declaration -->
+<section class="section doc-section" id="declaration">
+  <div class="container">
+    <div class="doc-prose reveal declaration-box">
+      <p>We hereby declare that this project was developed by our team specifically for the Frontend Web Development Competition 2026. The work submitted is original, and we have not copied any complete project or template from online sources. Any external resources used, such as fonts, have been appropriately acknowledged in the Technology Stack section above.</p>
+    </div>
+  </div>
+</section>
+ 
+</main>
+ 
+<!-- ===== Footer ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">Ember <span>&amp; Oak</span></a>
+        <p>Frontend Web Development Competition 2026 — Team Code Masters.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Site</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#menu">Menu</a></li>
+            <li><a href="index.html#reserve">Reserve</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Project</h4>
+          <ul>
+            <li><a href="https://github.com/username/project-name" target="_blank" rel="noopener">GitHub Repository</a></li>
+            <li><a href="https://project-name.vercel.app" target="_blank" rel="noopener">Live Deployment</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Ember &amp; Oak. Built for the Frontend Web Development Competition 2026.</span>
+      <span>Organized by Destination Career</span>
+    </div>
+  </div>
+</footer>
+ 
+<button class="to-top" aria-label="Back to top">↑</button>
+ 
+<script src="script.js"></script>
+</body>
+</html>
